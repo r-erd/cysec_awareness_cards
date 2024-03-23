@@ -14,7 +14,7 @@ if __name__ == "__main__":
             os.makedirs(output_folder, exist_ok=True)
 
             # Use ImageMagick to add watermark
-            subprocess.run(['convert', image_path, watermark_path, '-gravity', 'South', '-composite', output_path])
+            subprocess.run(['composite', '-dissolve', '30%', '-gravity', 'South', watermark_path, image_path, output_path])
             # Use ExifTool to remove sensitive information
             subprocess.run(['exiftool', '-all=', output_path])
 
