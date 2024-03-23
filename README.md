@@ -79,6 +79,14 @@ If you're interested in learning more about how these posters can benefit your o
     <img src="assets/warning_training_essential-marked.png" style="width: 200px" alt="Image 4">
 </div>
 
+
+## Dev
+
+```
+python3 postprocess.py png_exports watermark.png --output_folder=./assets
+```
+
 ## Copyright / License
 
 No license, so default copyright law applies. I retain all rights to my work (content of this repository), others are not permitted to use, reproduce, or distribute it without my explicit consent.
+
